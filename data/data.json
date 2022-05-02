@@ -1,0 +1,19 @@
+{
+    "jobs":[
+        {
+          "title": "Android Developer",
+          "id": 1,
+          "details": "creating scalable mobile applications"
+        },
+        {
+          "title": "UX Designer",
+          "id": 2,
+          "details": "creating use experince to the next level"
+        },
+        {
+          "title": "React Developer",
+          "id": 3,
+          "details": "creating reusable components"
+        }
+    ]
+}

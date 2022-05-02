@@ -1,11 +1,22 @@
 <template>
   <nav>
     <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link :to="{name:'about'}">About</router-link> |
+    <router-link  :to="{name: 'jobs'}">Jobs</router-link>
   </nav>
-  <router-view/>
+  <button @click="redirect">Redirect</button>
+  <router-view />
 </template>
 
+<script>
+export default {
+  methods:{
+    redirect(){
+      this.$router.push({name:'home'})
+    }
+  }
+}
+</script>
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
